@@ -8,7 +8,7 @@ async function getDBIssues(_, { status }) {
     const db = getDb();
     const filter = {};
     if (status) filter.status = status;
-    const issues = await db.collection('issues').find({}).toArray();
+    const issues = await db.collection('issues').find(filter).toArray();
     return issues;
 }
 

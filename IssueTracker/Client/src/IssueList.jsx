@@ -3,7 +3,6 @@ import IssueFilter from "./issueFilter.jsx";
 import IssueTable from "./issueTable.jsx";
 import IssueAdd from "./IssueAdd.jsx";
 import graphQLFetch from './graphQLFetch.js';
-import URLSearchParams from 'url-search-params';
 
 export default class IssueList extends React.Component {
 
